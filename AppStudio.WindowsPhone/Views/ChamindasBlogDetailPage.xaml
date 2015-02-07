@@ -1,0 +1,82 @@
+<Page
+    x:Class="AppStudio.Views.ChamindasBlogDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppStudio.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:AppStudio.ViewModels"
+    xmlns:ads="using:Microsoft.Advertising.Mobile.UI"    mc:Ignorable="d">
+
+  <Grid Background="{StaticResource AppBackgroundColor}">
+    <Grid.ChildrenTransitions>
+      <TransitionCollection>
+        <EntranceThemeTransition/>
+      </TransitionCollection>
+    </Grid.ChildrenTransitions>
+
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="80"/>
+    </Grid.RowDefinitions>
+
+    <FlipView Grid.Row="1" AutomationProperties.AutomationId="ItemsFlipView" AutomationProperties.Name="Item Details" TabIndex="1"
+              DataContext="{Binding ChamindasBlogModel}"
+              d:DataContext="{d:DesignData Source=/Assets/Data/ChamindasBlogDataSource.json, Type=vm:ChamindasBlogViewModel, IsDesignTimeCreatable=true}"
+              ItemsSource="{Binding Items}"
+              ItemTemplate="{StaticResource ChamindasBlog1DetailDetail}"
+              SelectedItem="{Binding SelectedItem, Mode=TwoWay}"/>
+
+    <ads:AdControl Grid.Row="2"
+                  AutoRefreshIntervalInSeconds="60"
+                  ApplicationId="test_client"
+                  AdUnitId="Image320_50"
+                  HorizontalAlignment="Center"
+                  Height="80"
+                  IsAutoRefreshEnabled="True"
+                  VerticalAlignment="Top"
+                  Width="400"/>
+  </Grid>
+
+  <Page.BottomAppBar>
+    <CommandBar ClosedDisplayMode="Minimal" Background="{StaticResource AppBarBackground}"              
+                Visibility="{Binding ChamindasBlogModel.AppBarVisibility}" Foreground="{StaticResource AppForegroundColor}">
+      <AppBarButton Icon="Font" x:Uid="FontSizeButton">
+        <AppBarButton.Flyout>
+          <Flyout>
+            <Grid DataContext="{Binding ChamindasBlogModel}" Background="{StaticResource AppBarBackground}">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+              </Grid.ColumnDefinitions>
+              <Button Grid.Column="0" Command="{Binding DecreaseSlider}" CommandParameter="{Binding ElementName=FontSizeSlider}" Content="&#xe1c6;" Style="{StaticResource CustomRssButtonStyle}"/>
+              <Slider x:Name="FontSizeSlider" Grid.Column="1" VerticalAlignment="Center" Minimum="14" Maximum="20" Value="16" SmallChange="2" LargeChange="4" IsThumbToolTipEnabled="False" Background="{StaticResource AppBarBackground}" />
+              <Button Grid.Column="2" Command="{Binding IncreaseSlider}" CommandParameter="{Binding ElementName=FontSizeSlider}" Content="&#xe1c7;" Style="{StaticResource CustomRssButtonStyle}"/>
+            </Grid>
+          </Flyout>
+        </AppBarButton.Flyout>
+      </AppBarButton>
+
+      <AppBarButton x:Uid="TextToSpeechButton" DataContext="{Binding ChamindasBlogModel}" Visibility="{Binding TextToSpeechVisibility}" Command="{Binding TextToSpeechCommand}">
+        <AppBarButton.Icon>
+          <BitmapIcon UriSource="ms-appx:///Assets/AppBar/TextToSpeech.png"/>
+        </AppBarButton.Icon>
+      </AppBarButton>
+      <AppBarButton x:Uid="RefreshButton" DataContext="{Binding ChamindasBlogModel}" Visibility="{Binding RefreshVisibility}" Command="{Binding RefreshCommand}">
+        <AppBarButton.Icon>
+          <BitmapIcon UriSource="ms-appx:///Assets/AppBar/Refresh.png"/>
+        </AppBarButton.Icon>
+      </AppBarButton>
+      <AppBarButton x:Uid="GoToSourceButton" DataContext="{Binding ChamindasBlogModel}" Visibility="{Binding GoToSourceVisibility}" Command="{Binding GoToSourceCommand}">
+        <AppBarButton.Icon>
+          <BitmapIcon UriSource="ms-appx:///Assets/AppBar/GoToSource.png"/>
+        </AppBarButton.Icon>
+      </AppBarButton>
+      <CommandBar.SecondaryCommands>
+        <AppBarButton x:Uid="ShareItemButton" DataContext="{Binding ChamindasBlogModel}" Visibility="{Binding ShareItemVisibility}" Command="{Binding ShareItemCommand}"/>
+      </CommandBar.SecondaryCommands>
+    </CommandBar>
+  </Page.BottomAppBar>
+</Page>
