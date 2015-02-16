@@ -3,11 +3,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
   <!-- Colors -->
-  <SolidColorBrush x:Key="AppForegroundColor" Color="#000000" />
-  <SolidColorBrush x:Key="AppBackgroundColor" Color="#ffffff" />
+  <SolidColorBrush x:Key="AppForegroundColor" Color="#031f59" />
+    <SolidColorBrush x:Key="AppBackgroundColor" Color="#d8e2f7" />
 
   <!-- Images -->
-  <BitmapImage x:Key="AppLogoImage" UriSource="/Assets/ApplicationLogo.png"/>
+  <BitmapImage x:Key="AppLogoImage" UriSource="ms-appx:///Assets/50.png"/>
   <BitmapImage x:Key="AppBackgroundImage" UriSource="/"/>
 
   <!-- App Background -->

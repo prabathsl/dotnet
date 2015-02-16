@@ -30,8 +30,8 @@
         </ResourceDictionary>
       </ResourceDictionary.ThemeDictionaries>
 
-      <x:String x:Key="AppName">.Net Sri Lanka</x:String>
-      <x:String x:Key="AppTitle">.Net Sri Lanka</x:String>
+      <x:String x:Key="AppName">.Net Lovers</x:String>
+            <x:String x:Key="AppTitle">.Net Lovers</x:String>
 
       <!-- Html2Xaml -->
       <html2xaml:Properties x:Key="Properties"/>

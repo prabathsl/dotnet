@@ -41,7 +41,7 @@
                   ApplicationId="test_client" 
                   AdUnitId="Image320_50" 
                   HorizontalAlignment="Center" 
-                  Height="80" 
+                  Height="60" 
                   IsAutoRefreshEnabled="True" 
                   VerticalAlignment="Top" 
                   Width="400"/>
