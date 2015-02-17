@@ -22,7 +22,7 @@
       <ContentPresenter ContentTemplate="{StaticResource PageHeader}" />
     </Border>
 
-    <TextBlock x:Uid="AboutSection" Margin="12,0" Grid.Row="1"  Text="about" Style="{StaticResource SubHeaderText}" />
+    <TextBlock x:Uid="AboutSection" Margin="12,0" Grid.Row="1"  Text="About" Style="{StaticResource SubHeaderText}" />
 
     <Grid Grid.Row="2" DataContext="{Binding AboutModel}"
           d:DataContext="{d:DesignInstance Type=vm:AboutThisAppViewModel, IsDesignTimeCreatable=true}">
@@ -41,7 +41,7 @@
 
       <TextBlock Grid.Row="1" Margin="12,24,12,0" FontSize="18" Foreground="{StaticResource AppForegroundColor}">
         <Run x:Uid="AppVersion" Text="App version:"/>
-        <Run Text="{Binding AppVersion}" />
+        <Run Text="1.0" />
       </TextBlock>
 
       <TextBlock Grid.Row="2" Margin="12,0,12,12" FontSize="18" Foreground="{StaticResource AppForegroundColor}">

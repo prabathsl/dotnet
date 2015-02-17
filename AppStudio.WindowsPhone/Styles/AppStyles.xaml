@@ -4,7 +4,7 @@
 
   <!-- Colors -->
   <SolidColorBrush x:Key="AppForegroundColor" Color="#031f59" />
-    <SolidColorBrush x:Key="AppBackgroundColor" Color="#d8e2f7" />
+    <SolidColorBrush x:Key="AppBackgroundColor" Color="#ffffff" />
 
   <!-- Images -->
   <BitmapImage x:Key="AppLogoImage" UriSource="ms-appx:///Assets/50.png"/>

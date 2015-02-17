@@ -24,6 +24,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{45CE0F7F-4EA
 		Lib\AppStudio.Common.dll = Lib\AppStudio.Common.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{F5344775-9600-4D04-941D-05B09DA74FA4}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Prabath.Peiris\Desktop\1.png = C:\Users\Prabath.Peiris\Desktop\1.png
+		C:\Users\Prabath.Peiris\Desktop\1000.png = C:\Users\Prabath.Peiris\Desktop\1000.png
+		C:\Users\Prabath.Peiris\Desktop\10172678_768050436538296_4985692548258646194_n.jpg = C:\Users\Prabath.Peiris\Desktop\10172678_768050436538296_4985692548258646194_n.jpg
+		C:\Users\Prabath.Peiris\Desktop\10421463_10152719803041387_1424681741192199678_n.jpg = C:\Users\Prabath.Peiris\Desktop\10421463_10152719803041387_1424681741192199678_n.jpg
+		C:\Users\Prabath.Peiris\Desktop\1538879_724930850850867_2114890869_n.jpg = C:\Users\Prabath.Peiris\Desktop\1538879_724930850850867_2114890869_n.jpg
+		C:\Users\Prabath.Peiris\Desktop\2.png = C:\Users\Prabath.Peiris\Desktop\2.png
+		C:\Users\Prabath.Peiris\Desktop\3.png = C:\Users\Prabath.Peiris\Desktop\3.png
+		C:\Users\Prabath.Peiris\Desktop\300.png = C:\Users\Prabath.Peiris\Desktop\300.png
+		C:\Users\Prabath.Peiris\Desktop\358.png = C:\Users\Prabath.Peiris\Desktop\358.png
+		C:\Users\Prabath.Peiris\Desktop\3581.png = C:\Users\Prabath.Peiris\Desktop\3581.png
+		C:\Users\Prabath.Peiris\Desktop\44.png = C:\Users\Prabath.Peiris\Desktop\44.png
+		C:\Users\Prabath.Peiris\Desktop\50.png = C:\Users\Prabath.Peiris\Desktop\50.png
+		C:\Users\Prabath.Peiris\Desktop\58.png = C:\Users\Prabath.Peiris\Desktop\58.png
+		C:\Users\Prabath.Peiris\Desktop\71.png = C:\Users\Prabath.Peiris\Desktop\71.png
+		C:\Users\Prabath.Peiris\Desktop\dotnet.png = C:\Users\Prabath.Peiris\Desktop\dotnet.png
+		C:\Users\Prabath.Peiris\Desktop\dotnet310.png = C:\Users\Prabath.Peiris\Desktop\dotnet310.png
+		C:\Users\Prabath.Peiris\Desktop\Screen.png = C:\Users\Prabath.Peiris\Desktop\Screen.png
+		C:\Users\Prabath.Peiris\Desktop\SplashScreen.jpg = C:\Users\Prabath.Peiris\Desktop\SplashScreen.jpg
+		..\dotnet\wp_ss_20150216_0001.png = ..\dotnet\wp_ss_20150216_0001.png
+		..\dotnet\wp_ss_20150216_0003.png = ..\dotnet\wp_ss_20150216_0003.png
+		..\dotnet\wp_ss_20150216_0004.png = ..\dotnet\wp_ss_20150216_0004.png
+		..\dotnet\wp_ss_20150216_0005.png = ..\dotnet\wp_ss_20150216_0005.png
+		..\dotnet\wp_ss_20150216_0006.png = ..\dotnet\wp_ss_20150216_0006.png
+		..\dotnet\wp_ss_20150216_0007.png = ..\dotnet\wp_ss_20150216_0007.png
+		..\dotnet\wp_ss_20150216_0008.png = ..\dotnet\wp_ss_20150216_0008.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		AppStudio.Shared\AppStudio.Shared.projitems*{08def3b9-76ea-47ec-b4b8-9c19d91abec8}*SharedItemsImports = 4

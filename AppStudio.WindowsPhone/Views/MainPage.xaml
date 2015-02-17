@@ -20,9 +20,55 @@
       </TransitionCollection>
     </Grid.ChildrenTransitions>
     <Hub x:Name="Container" Grid.Row="1" Background="{StaticResource AppBackground}" DataContext="{Binding}" HeaderTemplate="{StaticResource PageHeaderMargin}" SectionsInViewChanged="OnSectionsInViewChanged">
-      <HubSection HeaderTemplate="{StaticResource HubHeader}" Width="360" Header="Introduction" DataContext="{Binding MainViewModel.AboutModel}" 
-                  d:DataContext="{d:DesignData Source=/Assets/Data/AboutDataSource.json, Type=vm:AboutViewModel, IsDesignTimeCreatable=true}"
-                  ContentTemplate="{StaticResource AboutList}" IsHeaderInteractive="{Binding HasMoreItems}" />
+            <HubSection HeaderTemplate="{StaticResource HubHeader}" Width="360" Header="Introduction" DataContext="{Binding MainViewModel.AboutModel}" 
+                >
+                <DataTemplate>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel  Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock TextWrapping="Wrap"  Foreground="#031f59" FontSize="15">
+                                <Run Text="This application will contains all the latest updates and technologies which elated with the .Net development and ALM. All those srilankan blogs are maintaied by MVP IMost Valuble proffesional's) and Sri Lanka .NET user group speakers."/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run Text="you can update with latest news on Sri Lanka .Net User group with , "/>
+                            </TextBlock>
+                            <HyperlinkButton Content="@dotnetforumsl" NavigateUri="https://www.facebook.com/groups/dotnetforumsl/" Foreground="#FF031F59" ></HyperlinkButton>
+                    </StackPanel>
+                        <Image Margin="2" Grid.Row="1" Source="ms-appx:///Assets/DataImages/1.png"/>
+                    <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <TextBlock Foreground="#031f59" Text="Chaminda Chandrasekara" FontSize="20"/>
+                            <TextBlock Text="Microsoft MVP ALM" Foreground="#031f59" FontSize="14"/>
+                            <TextBlock Text="Certified ScrumMaster®" Foreground="#031f59" FontSize="14"/>
+                    </StackPanel>
+                        <Image Margin="2" Grid.Row="2" Source="ms-appx:///Assets/DataImages/2.png"/>
+                    <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+                            <TextBlock Text="Jaliya Udagedara" Foreground="#031f59" FontSize="20"/>
+                            <TextBlock Text="Microsoft MVP Visual C#" Foreground="#031f59" FontSize="14"/>
+                            <TextBlock Text="MCSD , MCPD" Foreground="#031f59" FontSize="14"/>
+                    </StackPanel>
+                    <Image Margin="2" Grid.Row="3" Source="ms-appx:///Assets/DataImages/avatar.jpg" />
+                    <StackPanel Grid.Column="1" Grid.Row="3" VerticalAlignment="Center">
+                            <TextBlock Text="Prabath M Peiris" Foreground="#031f59" FontSize="20"/>
+                            <TextBlock Text="Application Development Specialist" TextWrapping="Wrap" Foreground="#031f59" FontSize="14"/>
+                    </StackPanel>
+                        <Image Margin="2" Grid.Row="4" Source="ms-appx:///Assets/DataImages/3.png"/>
+                    <StackPanel Grid.Column="1" Grid.Row="4" VerticalAlignment="Center">
+                            <TextBlock Text="Malin De Silva" Foreground="#031f59" FontSize="20"/>
+                            <TextBlock Text="Sharepoint Specialist" Foreground="#031f59" FontSize="14"/>
+                    </StackPanel>
+                </Grid>
+                </DataTemplate>
+            </HubSection>
       <HubSection HeaderTemplate="{StaticResource HubHeader}" Width="360" Header="Prabath&apos;s Blog" DataContext="{Binding MainViewModel.PrabathsBlogModel}" 
                   d:DataContext="{d:DesignData Source=/Assets/Data/PrabathsBlogDataSource.json, Type=vm:PrabathsBlogViewModel, IsDesignTimeCreatable=true}"
                   ContentTemplate="{StaticResource PrabathsBlogList}" IsHeaderInteractive="{Binding HasMoreItems}" />
@@ -63,7 +109,6 @@
       </AppBarButton>
       <CommandBar.SecondaryCommands>
         <AppBarButton x:Uid="AboutButton" Label="about" Command="{Binding MainViewModel.AboutCommand}"/>
-        <AppBarButton x:Uid="PrivacyButton" Label="privacy" Command="{Binding MainViewModel.PrivacyCommand}"/>
         <AppBarButton x:Uid="ShareItemButton" Label="share item" Visibility="{Binding MainViewModel.SelectedItem.ShareItemVisibility}" Command="{Binding MainViewModel.SelectedItem.ShareItemCommand}"/>
       </CommandBar.SecondaryCommands>
     </CommandBar>

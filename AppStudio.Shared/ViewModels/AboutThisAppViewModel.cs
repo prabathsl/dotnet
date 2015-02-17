@@ -10,7 +10,7 @@ namespace AppStudio.ViewModels
         {
             get
             {
-                return "AppStudio";
+                return "Prabathsl";
             }
         }
 
@@ -26,8 +26,8 @@ namespace AppStudio.ViewModels
         {
             get
             {
-                return ".Net Sri Lanka is the application which help you to improove .Net skills and deve" +
-    "lopment skills on latest tools.";
+                return "This Application created to help .NET users in the world. this will help you to increase your programming skills and techniques.\n"+
+                    "All the content in this application is own to each article write and use this details in any commercial scenario is pro habited";
             }
         }
     }

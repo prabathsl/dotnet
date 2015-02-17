@@ -8,7 +8,7 @@
     <!-- HtmlList -->
     <DataTemplate x:Key="AboutList">
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
-             <RichTextBlock html2xaml:Properties.Html="{Binding Items[0].Content}" Margin="0,0,15,0" Foreground="{StaticResource AppForegroundColor}" Style="{StaticResource Html2XamlStyle}"/>
+          
         </ScrollViewer>
     </DataTemplate>
 

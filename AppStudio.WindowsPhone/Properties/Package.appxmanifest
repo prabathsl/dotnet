@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="2579a722-0b1a-48fd-a4aa-86e2052d459f" Publisher="CN=AppStudio" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="347d7817-2487-4d56-8866-339bbecf8d94" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="28223PrabathSL.DotNET" Publisher="CN=7DCFFC19-4074-4CE4-9040-229A06DB1F14" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="2baa149c-2f9d-4f99-b992-61786398a0d3" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>AppStudio App</DisplayName>
-    <PublisherDisplayName>AppStudio</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <DisplayName>DotNET</DisplayName>
+    <PublisherDisplayName>Prabath_SL</PublisherDisplayName>
+    <Logo>Assets\50.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
@@ -16,8 +16,9 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="AppStudio.App">
-      <m3:VisualElements DisplayName=".NET Lovers" Description=".Net Sri Lanka is the application which help you to improove .Net skills and development skills on latest tools." Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" ForegroundText="light" BackgroundColor="#d8e2f7">
-        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png" ShortName=".Net Sri Lanka">
+      <m3:VisualElements DisplayName=".NET Lovers" Description=".Net Sri Lanka is the application which help you to improove .Net skills and development skills on latest tools." Square150x150Logo="Assets\dotnet.png" Square44x44Logo="Assets\44.png" ForegroundText="light" BackgroundColor="#d8e2f7" ToastCapable="false">
+        <m3:LockScreen Notification="badge" BadgeLogo="Assets\58.png" />
+        <m3:DefaultTile Wide310x150Logo="Assets\dotnet310.png" Square71x71Logo="Assets\71.png" ShortName=".Net Sri Lanka">
           <m3:ShowNameOnTiles>
             <m3:ShowOn Tile="square150x150Logo" />
             <m3:ShowOn Tile="wide310x150Logo" />

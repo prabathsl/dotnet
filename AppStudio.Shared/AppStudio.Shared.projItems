@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -44,9 +44,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\JaliyasBlogViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ChamindasBlogViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MalinsBlogViewModel.cs" />
-        <PRIResource Include="$(MSBuildThisFileDirectory)Strings\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DataImages\3.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\ErrorImage.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
@@ -82,5 +85,5 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-      </ItemGroup>
+  </ItemGroup>
 </Project>

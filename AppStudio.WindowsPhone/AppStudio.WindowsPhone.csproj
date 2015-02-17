@@ -17,6 +17,8 @@
     <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
     <RestorePackages>true</RestorePackages>
     <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -89,12 +91,12 @@
   <ItemGroup>
     <Content Include="Assets\44.png" />
     <Content Include="Assets\50.png" />
+    <Content Include="Assets\58.scale-240.png" />
     <Content Include="Assets\71.png" />
     <Content Include="Assets\AppBar\GoToSource.png" />
     <Content Include="Assets\AppBar\PinToStart.png" />
     <Content Include="Assets\AppBar\Refresh.png" />
     <Content Include="Assets\AppBar\TextToSpeech.png" />
-    <Content Include="Assets\BadgeLogo.png" />
     <Content Include="Assets\dotnet.png" />
     <Content Include="Assets\dotnet310.png" />
     <Content Include="Assets\Logo.scale-100.png" />
@@ -103,6 +105,7 @@
     <Content Include="Assets\Square71x71Logo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\WideLogo.scale-100.png" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Views\DataTemplates\AboutViews.xaml" />
     <Content Include="Views\DataTemplates\PrabathsBlogViews.xaml" />
     <Content Include="Views\DataTemplates\JaliyasBlogViews.xaml" />
@@ -111,7 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-240.jpg" />
-    <Content Include="Assets\ApplicationLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\ObservableDictionary.cs" />
